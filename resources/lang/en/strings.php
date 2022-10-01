@@ -12,8 +12,14 @@ return [
     'remember_me' => 'Remember Me',
     'auth_fields' => [
         'name' => 'Name',
+        'surnames' => 'Surnames',
+        'dni' => 'DNI',
+        'phone' => 'Phone Number',
+        'country' => 'Country',
+        'iban' => 'IBAN',
         'email' => 'E-Mail Address',
         'password' => 'Password',
         'confirm_password' => 'Confirm Password',
+        'about' => 'About You',
     ],
 ];
