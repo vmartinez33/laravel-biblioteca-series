@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 
+use App\Rules\AlphaSpaces;
+use App\Rules\Dni;
+use App\Rules\Iban;
+use App\Rules\PasswordFormat;
+use App\Rules\PhoneNumber;
+
 class RegisterController extends Controller
 {
     /*
@@ -53,13 +59,13 @@ class RegisterController extends Controller
         $countries = ['España', 'Francia', 'Portugal', 'Alemania', 'Italia'];
         return Validator::make($data, [
             'name' => ['required', 'alpha', 'between:2,20'],
-            'surnames' => ['required', 'alpha', 'between:2,40'], // NO ADMITE ESPACIOS EN BLANCO!!!
-            'dni' => ['required', 'regex:/(^[0-9]{8})+[A-Z]{1}$/'],
-            'phone' => ['nullable', 'regex:/^[+]$[0-9]+$|[0-9]+$/', 'between:9,12'],
+            'surnames' => ['required', 'between:2,40', new AlphaSpaces],
+            'dni' => ['required', new Dni],
+            'phone' => ['nullable', 'between:9,12', new PhoneNumber],
             'country' => ['nullable', 'alpha', Rule::in($countries)],
-            'iban' => ['required', 'regex:/^ES+[0-9]{22}$/'],
+            'iban' => ['required', new Iban],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:10', 'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%\+*?&#.$()\-_^\[\],])[A-Za-z\d$@$!%\+*?&#.$()\-_^\[\],]{0,}$/', 'confirmed'],
+            'password' => ['required', 'string', 'min:10', 'confirmed', new PasswordFormat],
             'about' => ['nullable', 'between:20,250'],
         ]);
     }

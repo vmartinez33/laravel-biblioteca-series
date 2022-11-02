@@ -148,4 +148,19 @@ return [
 
     'attributes' => [],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Message
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify messages for custom validation rules.
+    |
+    */
+
+    'alpha_spaces' => ':attribute may only contain letters or blanks',
+    'dni' => ':attribute must have a valid DNI format.',
+    'phone_number' => ':attribute must have a valid phone number format.',
+    'iban' => ':attribute must have a valid IBAN format.',
+    'password_format' => 'Password must contain at least one lowercase and uppercase letter, one number and one special symbol',
+
 ];
