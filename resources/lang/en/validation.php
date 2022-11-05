@@ -158,9 +158,9 @@ return [
     */
 
     'alpha_spaces' => ':attribute may only contain letters or blanks',
-    'dni' => ':attribute must have a valid DNI format.',
-    'phone_number' => ':attribute must have a valid phone number format.',
-    'iban' => ':attribute must have a valid IBAN format.',
+    'dni' => ':attribute must have a valid DNI format (e.g.: 74400011N).',
+    'phone_number' => ':attribute must have a valid phone number format (e.g.: +34676767676 o 676767676).',
+    'iban' => ':attribute must have a valid IBAN format (e.g.: ES9121000418450200051332).',
     'password_format' => 'Password must contain at least one lowercase and uppercase letter, one number and one special symbol',
 
 ];

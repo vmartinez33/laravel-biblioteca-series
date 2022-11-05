@@ -158,9 +158,9 @@ return [
     */
 
     'alpha_spaces' => ':attribute solo debe contener letras o espacios en blanco.',
-    'dni' => ':attribute debe tener un formato de DNI válido.',
-    'phone_number' => ':attribute debe tener un formato de teléfono válido.',
-    'iban' => ':attribute debe tener un formato de IBAN válido.',
+    'dni' => ':attribute debe tener un formato de DNI válido (ej.: 74400011N).',
+    'phone_number' => ':attribute debe tener un formato de teléfono válido (ej.: +34676767676 o 676767676).',
+    'iban' => ':attribute debe tener un formato de IBAN válido (ej.: ES9121000418450200051332).',
     'password_format' => 'La contraseña debe contener al menos una letra minúscula y mayúscula, un número y un símbolo especial',
 
 ];
