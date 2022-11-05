@@ -13,8 +13,8 @@
 
 - **PASO 2** >>> Crear una base de datos desde phpMyadmin con el nombre "actividad_sw" (comprobar que la cadena de conexión sea correcta).
 
-- **PASO 3** >>> composer dump-autoload
+- **PASO 3** >>> php artisan migrate:fresh --seed
 
-- **PASO 4** >>> php artisan migrate:fresh --seed
+- **PASO 4** >>> php artisan serve (o usar MAMP), y a probar!
 
 - **PASO 5** >>> Puedes iniciar sesión con el usuario de pruebas que nos indicaste en el PDF de la actividad.
