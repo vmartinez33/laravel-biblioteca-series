@@ -7,6 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+# Descripción
+Proyecto desarrollado con PHP más framework Laravel y base de datos MySQL. Interfaz para gestionar tu propia biblioteca de series; CRUD de actores, directores y plataformas de emisión, así como de las propias series. Segunda versión del proyecto https://github.com/vmartinez33/LARAVEL-Biblioteca_series, con sistema de traducción y validaciones más completas.
+
 # Instrucciones a seguir para que el proyecto funcione
 
 - **PASO 1** >>> composer install
@@ -16,5 +19,3 @@
 - **PASO 3** >>> php artisan migrate:fresh --seed
 
 - **PASO 4** >>> php artisan serve (o usar MAMP), y a probar!
-
-- **PASO 5** >>> Puedes iniciar sesión con el usuario de pruebas que nos indicaste en el PDF de la actividad.
