@@ -8,7 +8,7 @@
 </p>
 
 # Descripción
-Proyecto desarrollado con PHP más framework Laravel y base de datos MySQL. Interfaz para gestionar tu propia biblioteca de series; CRUD de actores, directores y plataformas de emisión, así como de las propias series. Segunda versión del proyecto https://github.com/vmartinez33/LARAVEL-Biblioteca_series, con sistema de traducción y validaciones más completas.
+Proyecto desarrollado con PHP más framework Laravel y base de datos MySQL. Interfaz para gestionar tu propia biblioteca de series; CRUD de actores, directores y plataformas de emisión, así como de las propias series. Con sistema de traducción y validaciones más completas.
 
 # Instrucciones a seguir para que el proyecto funcione
 
